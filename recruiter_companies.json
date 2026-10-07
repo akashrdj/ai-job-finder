@@ -1,0 +1,2212 @@
+{
+  "total_unique_companies": 198,
+  "total_emails": 220,
+  "companies": [
+    {
+      "company": "Metastart",
+      "emails": [
+        "talent@metastart.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "metastart.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Userfindr",
+      "emails": [
+        "utkarsh@userfindr.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "userfindr.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Astrotalk",
+      "emails": [
+        "debasmita.roy@astrotalk.com",
+        "hiring@astrotalk.com"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "astrotalk.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "Humantic AI",
+      "emails": [
+        "talent@humantic.ai"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "humantic.ai"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Medstown",
+      "emails": [
+        "support@medstown.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "medstown.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Zyod",
+      "emails": [
+        "aman.jha@zyod.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "zyod.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Groww",
+      "emails": [
+        "future@groww.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "groww.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Infosys",
+      "emails": [
+        "amruta.deshpande1610@gmail.com",
+        "bangalore.hrd@inf.com",
+        "careers@inf.com",
+        "engserv@inf.com"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "gmail.com",
+        "inf.com"
+      ],
+      "email_count": 4
+    },
+    {
+      "company": "Antler (Singapore)",
+      "emails": [
+        "tandavkrishna27@gmail.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "gmail.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "EatFit",
+      "emails": [
+        "rakshita@eatfit.in"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "eatfit.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Fixerra",
+      "emails": [
+        "careers@fixerra.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "fixerra.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Cars24",
+      "emails": [
+        "swapnil.mishra@cars24.com",
+        "mahima.jain@cars24.com",
+        "gursharan.kaur@cars24.com"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "cars24.com"
+      ],
+      "email_count": 3
+    },
+    {
+      "company": "Volt Money",
+      "emails": [
+        "ankita.singh@voltmoney.in",
+        "careers@voltmoney.in"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "voltmoney.in"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "Blance",
+      "emails": [
+        "pankaj@blance.in"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "blance.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Meesho",
+      "emails": [
+        "himanshubarak@gmail.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "gmail.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "DataZip",
+      "emails": [
+        "piyushsingariya@datazip.io",
+        "manik@datazip.io"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "datazip.io"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "Textrai",
+      "emails": [
+        "founders@textrai.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "textrai.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Tophire",
+      "emails": [
+        "ipitha.km@tophire.co"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "tophire.co"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Cypherock",
+      "emails": [
+        "atul.nandan@cypherock.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "cypherock.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Zluri",
+      "emails": [
+        "mamta.s@zluri.com",
+        "shivani.c@zluri.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "zluri.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "Third Unicorn (Ashneer)",
+      "emails": [
+        "rahul@third-unicorn.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "third-unicorn.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Carvelle",
+      "emails": [
+        "careers@carvelle.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "carvelle.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "psytech.ai",
+      "emails": [
+        "people@psytech.ai"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "psytech.ai"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Juspay",
+      "emails": [
+        "miskin.shravani@juspay.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "juspay.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Flipkart",
+      "emails": [
+        "abhinavsingh.k@flipkart.com",
+        "anjali.verma@flipkart.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "flipkart.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "GetSwipe",
+      "emails": [
+        "naveen+hiring@getswipe.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "getswipe.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Hotstar",
+      "emails": [
+        "chaitrashree.hegde.con@hotstar.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "hotstar.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Paytm",
+      "emails": [
+        "hr@paytm.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "paytm.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Oyo",
+      "emails": [
+        "shubhi.verma@oyorooms.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "oyorooms.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Gameberrylabs",
+      "emails": [
+        "debasmita@gameberrylabs.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "gameberrylabs.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Piramal",
+      "emails": [
+        "ravi.shankar@piramal.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "piramal.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Paypal",
+      "emails": [
+        "r.chandrasi1996@gmail.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "gmail.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Talk Charge",
+      "emails": [
+        "careers@talkcharge.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "talkcharge.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Physics Wallah",
+      "emails": [
+        "prakriti.goel@pw.live"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "pw.live"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Zuraverse",
+      "emails": [
+        "hiring@zuraverse.xyz"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "zuraverse.xyz"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "INTEL",
+      "emails": [
+        "npwhrindia@intel.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "intel.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ORACLE",
+      "emails": [
+        "naveen.vemula@oracle.com",
+        "suman.rajeev@oracle.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "oracle.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "LUCENT",
+      "emails": [
+        "hrindia@lucent.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "lucent.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SONY",
+      "emails": [
+        "dreamjob@sisc.in.sony.com.sg"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "sisc.in.sony.com.sg"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "HUGHES",
+      "emails": [
+        "hsshr@hss.hns.com",
+        "resumetoib@hss.hns.com"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "hss.hns.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "NORTEL",
+      "emails": [
+        "nadhr@nortelnetworks.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "nortelnetworks.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "TCS",
+      "emails": [
+        "recruitment@blore.tcs.co.in",
+        "resume@chennai.tcs.com"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "blore.tcs.co.in",
+        "chennai.tcs.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "Veritas",
+      "emails": [
+        "bangalore@vxindia.veritas.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "vxindia.veritas.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Aspect Dev",
+      "emails": [
+        "jobs@india.aspectdv.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "india.aspectdv.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "MBT",
+      "emails": [
+        "resume@mahindrabt.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "mahindrabt.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "HP",
+      "emails": [
+        "resumes@india.hp.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "india.hp.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "HCL Tech",
+      "emails": [
+        "rsriram@hclt.com",
+        "resumeblr@hclt.com",
+        "careerb@msdc.hcltech.com",
+        "careers@noida.hclt.com"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "hclt.com",
+        "msdc.hcltech.com",
+        "noida.hclt.com"
+      ],
+      "email_count": 4
+    },
+    {
+      "company": "PENTAFOUR",
+      "emails": [
+        "muralikrishna@pentafour.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "pentafour.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "NOVELL",
+      "emails": [
+        "career@novell.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "novell.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SUN",
+      "emails": [
+        "careers@india.sun.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "india.sun.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "BPL Innovision",
+      "emails": [
+        "jobs@bplinnovision.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "bplinnovision.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "D E Shaw",
+      "emails": [
+        "recruit-india@deshaw.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "deshaw.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "iCode",
+      "emails": [
+        "hr_india@icode.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "icode.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "PTPL",
+      "emails": [
+        "prakash@ptpl.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "ptpl.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "InfoGain",
+      "emails": [
+        "hrdindia@india.infogain.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "india.infogain.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Satyam",
+      "emails": [
+        "globaltalent@bet.satyam.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "bet.satyam.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "PSI",
+      "emails": [
+        "resumes@psi.soft.net"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "psi.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "StumpVision",
+      "emails": [
+        "stumpvision@blr.vsnl.net.in",
+        "krish@stumpvision.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "blr.vsnl.net.in",
+        "stumpvision.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "Siemens",
+      "emails": [
+        "hmsrecruit@sisl.co.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "sisl.co.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Wipro",
+      "emails": [
+        "careers@wipro.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "wipro.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "American Data Solutions",
+      "emails": [
+        "adsihr@gafri.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "gafri.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Healtheon",
+      "emails": [
+        "jobs@healtheonindia.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "healtheonindia.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Bharti Telesoft",
+      "emails": [
+        "careers@bhartitelesoft.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "bhartitelesoft.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "IBM",
+      "emails": [
+        "osudar@in.ibm.com",
+        "mamol@in.ibm.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "in.ibm.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "For Lucent",
+      "emails": [
+        "skg@spectrumconsultants.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "spectrumconsultants.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "GE India",
+      "emails": [
+        "itl.geitc@geind.ge.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "geind.ge.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "iCope",
+      "emails": [
+        "hrd@icope.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "icope.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "NATIONAL",
+      "emails": [
+        "careers@malkauns.nsc.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "malkauns.nsc.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Philips",
+      "emails": [
+        "pscareers2000@philips.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "philips.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "BOSCALLEO Ecomm",
+      "emails": [
+        "hr@boscalleo.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "boscalleo.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "IT Solutions",
+      "emails": [
+        "careers_2000@its.soft.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "its.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "NIHILENT",
+      "emails": [
+        "career@nihilent.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "nihilent.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CISCO",
+      "emails": [
+        "india_jobs@cisco.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cisco.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "PEOPLE.COM",
+      "emails": [
+        "speri@techpeople-india.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "techpeople-india.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "NetBrahma",
+      "emails": [
+        "want2b@netbrahma.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "netbrahma.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SunCoreSoft",
+      "emails": [
+        "hrd@suncoresoft.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "suncoresoft.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Ishoni",
+      "emails": [
+        "jobs@ishoni.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "ishoni.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "LG Software I",
+      "emails": [
+        "walkin@lgsi.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "lgsi.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "HPS Global",
+      "emails": [
+        "hps.rmg@hpsglobal.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "hpsglobal.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Reliance",
+      "emails": [
+        "jobs@reliance.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "reliance.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ESCOSOFT",
+      "emails": [
+        "carer@escosoft-tech.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "escosoft-tech.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SERANOVA",
+      "emails": [
+        "careerindia@seraova.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "seraova.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "TeleSoft",
+      "emails": [
+        "hrd@indts.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "indts.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SSI",
+      "emails": [
+        "infinity@ssi-technologies.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "ssi-technologies.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "MelStar",
+      "emails": [
+        "bstp@melstar.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "melstar.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "USInteractive",
+      "emails": [
+        "careers@usinteractive.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "usinteractive.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Cerebra",
+      "emails": [
+        "jobs@cerebracomputers.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cerebracomputers.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Empowertel",
+      "emails": [
+        "hrindia@empowertel.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "empowertel.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "PTC",
+      "emails": [
+        "hrtoi@india.ptc.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "india.ptc.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Siri Technolgoies",
+      "emails": [
+        "hr@siritech.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "siritech.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ALIT",
+      "emails": [
+        "hr@alit.soft.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "alit.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "i Flex",
+      "emails": [
+        "sandeep.bhattacharya@iflexsolutions.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "iflexsolutions.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CosmoNet",
+      "emails": [
+        "hrd@cosmonetsolutions.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cosmonetsolutions.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "POLARIS",
+      "emails": [
+        "resume_toib@polaris.co.in"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "polaris.co.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "RAS Infotech",
+      "emails": [
+        "resumes@rasinfotech.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "rasinfotech.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SIP Technolgies",
+      "emails": [
+        "hrd@siptech.co.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "siptech.co.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SNS Tech",
+      "emails": [
+        "careers@snstech.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "snstech.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "AUTODESK",
+      "emails": [
+        "crvcon@vsnl.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "vsnl.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "LGSoft",
+      "emails": [
+        "onsite_java@lgsi.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "lgsi.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Kindle",
+      "emails": [
+        "work_here@kindlesystems.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "kindlesystems.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "InfoStrands",
+      "emails": [
+        "infostrands@gtvltd.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "gtvltd.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ObjectOrb",
+      "emails": [
+        "hr@objectorb.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "objectorb.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Comnet",
+      "emails": [
+        "hrd@comneti.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "comneti.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CIS",
+      "emails": [
+        "hrtelecom@cisindia.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cisindia.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "OnwardGroup",
+      "emails": [
+        "geetha_cherian@onwardgroup.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "onwardgroup.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Green Microsystems",
+      "emails": [
+        "jobs@greenmicrosystems.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "greenmicrosystems.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "STPI",
+      "emails": [
+        "personnel@stpb.soft.net"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "stpb.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Quark",
+      "emails": [
+        "careers@quark.stpm.soft.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "quark.stpm.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "DelDot",
+      "emails": [
+        "subbu@deldot.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "deldot.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SUBEX",
+      "emails": [
+        "ganesh@subegroup.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "subegroup.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SIERRAOPT",
+      "emails": [
+        "career@sierraopt.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "sierraopt.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "DSQ",
+      "emails": [
+        "recruit_ecom@md.in.dsqsoft.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "md.in.dsqsoft.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "IIC",
+      "emails": [
+        "hr@iictechnologies.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "iictechnologies.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CYBERTECH",
+      "emails": [
+        "ecomjobs@cybertech.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cybertech.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "FormulaSys",
+      "emails": [
+        "resumes@formulasys.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "formulasys.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "WorkFlow",
+      "emails": [
+        "hr@workflow.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "workflow.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SystemLogic",
+      "emails": [
+        "got2b@systemlogic.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "systemlogic.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CyberAnalysts",
+      "emails": [
+        "resume@cyberanalysts.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "cyberanalysts.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "IMPETUS",
+      "emails": [
+        "hr@impetus.co.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "impetus.co.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "VISTEON",
+      "emails": [
+        "svadivel@visteon.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "visteon.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Amadee",
+      "emails": [
+        "myjobs@amadee.de"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "amadee.de"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "WEBTEK",
+      "emails": [
+        "webtek_jobs@dresdner-bank.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "dresdner-bank.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CIRRUS LOGIC",
+      "emails": [
+        "hrd@cirrus.stpp.soft.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cirrus.stpp.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "TVSFUGEN",
+      "emails": [
+        "mjojo@tvsfugen.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "tvsfugen.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Onscan",
+      "emails": [
+        "jobs@onscan.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "onscan.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "EmbeddedWireless",
+      "emails": [
+        "jobs@embeddedwireless.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "embeddedwireless.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "DECCANET",
+      "emails": [
+        "career@deccanetdesigns.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "deccanetdesigns.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "DuskValley",
+      "emails": [
+        "joinus@duskvalley.com",
+        "duskvalley@vsnl.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "duskvalley.com",
+        "vsnl.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "SEMA",
+      "emails": [
+        "hrd@sema.co.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "sema.co.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "FTD /",
+      "emails": [
+        "future4u@ftdpl.com.sg"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "ftdpl.com.sg"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SAS",
+      "emails": [
+        "careers@sasi.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "sasi.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SPIKE EDA /",
+      "emails": [
+        "design@spikeindia.soft.net"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "spikeindia.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "HCL",
+      "emails": [
+        "freedom@ggn.hcltech.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "ggn.hcltech.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Aptech",
+      "emails": [
+        "corporatetrg@aptech.co.in"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "aptech.co.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Datamatics",
+      "emails": [
+        "psaib@datamatics.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "datamatics.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "AQUILA EBusiness",
+      "emails": [
+        "hrd@aquila.soft.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "aquila.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "DATUM",
+      "emails": [
+        "careers@datumtec.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "datumtec.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "AMBER",
+      "emails": [
+        "india_jobs@ambernetworks.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "ambernetworks.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Integra",
+      "emails": [
+        "career@integramicro.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "integramicro.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Lante",
+      "emails": [
+        "cvindia@lante.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "lante.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "RELQ",
+      "emails": [
+        "relqusa@relq.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "relq.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Sonata",
+      "emails": [
+        "hrd@sonata-software.com",
+        "career@sonata-software.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "sonata-software.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "ZAP",
+      "emails": [
+        "hrdbg@skillsandjobs.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "skillsandjobs.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Zensar",
+      "emails": [
+        "dreamcareers@zensar.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "zensar.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Spectrum",
+      "emails": [
+        "ravikum@mbox2.singnet.com.sg"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "mbox2.singnet.com.sg"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Forbes",
+      "emails": [
+        "forbeshr@bgl.vsnl.net.in",
+        "forbesbg@bgl.vsnl.net.in"
+      ],
+      "email_type": "mixed",
+      "domains": [
+        "bgl.vsnl.net.in"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "Synopsys",
+      "emails": [
+        "guru@synopsys.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "synopsys.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "JobCurry Australia",
+      "emails": [
+        "map@jobcurry.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "jobcurry.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Sun Tech",
+      "emails": [
+        "hr@suntechnologies.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "suntechnologies.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "HTC",
+      "emails": [
+        "htc.blr@htcinc.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "htcinc.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CGSmith",
+      "emails": [
+        "resume@cgs.cgsmith.soft.net"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "cgs.cgsmith.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "APCC",
+      "emails": [
+        "irecruit@apcc.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "apcc.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "TechDrive",
+      "emails": [
+        "sunitha@techdriveintl.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "techdriveintl.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "UniqueComputing",
+      "emails": [
+        "careers@uniquecomputing.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "uniquecomputing.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Accord Soft",
+      "emails": [
+        "asiapacific@accord-soft.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "accord-soft.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ZenSoft",
+      "emails": [
+        "hrd.zensoft@pacific.net.sg"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "pacific.net.sg"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Zenith Mumbai",
+      "emails": [
+        "hr@zenithsoft.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "zenithsoft.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Velocient",
+      "emails": [
+        "rsg@in.velocient.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "in.velocient.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Selectica",
+      "emails": [
+        "hr_bgl@selectica.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "selectica.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Think Inc. Coimbatore",
+      "emails": [
+        "jobs@thinkbn.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "thinkbn.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Mphasis",
+      "emails": [
+        "hr@mphasis.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "mphasis.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Digital",
+      "emails": [
+        "di.recruit@digital.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "digital.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Alopa",
+      "emails": [
+        "hrindia@alopa.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "alopa.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Silicon Automation",
+      "emails": [
+        "careers@sasi.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "sasi.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Birla Software",
+      "emails": [
+        "recruitment@birlasoftware.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "birlasoftware.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "WebXL",
+      "emails": [
+        "jobs@webxl.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "webxl.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Talisma",
+      "emails": [
+        "got2b@talisma.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "talisma.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Aditi",
+      "emails": [
+        "got2b@aditi.com",
+        "want2b@aditi.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "aditi.com"
+      ],
+      "email_count": 2
+    },
+    {
+      "company": "AmSoft",
+      "emails": [
+        "hrd@amsoftis.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "amsoftis.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Software",
+      "emails": [
+        "jobs@bangaloresoftware.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "bangaloresoftware.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ARTHUR ANDERSEN",
+      "emails": [
+        "rescw@arthurandersen.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "arthurandersen.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Raffles",
+      "emails": [
+        "careers@raffles.soft.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "raffles.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ECosmos",
+      "emails": [
+        "hr_ecosmos@netkracker.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "netkracker.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "SAP",
+      "emails": [
+        "sanjukta.sarkar@sap.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "sap.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "PUNDITS",
+      "emails": [
+        "protocol@pundits.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "pundits.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "AZTEC",
+      "emails": [
+        "jobs@aztecsoft.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "aztecsoft.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Infy Banking Software",
+      "emails": [
+        "banking_hrd@infy.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "infy.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Infy IS Software",
+      "emails": [
+        "careers.is@inf.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "inf.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "HPS(Perot) Global",
+      "emails": [
+        "opportunities@hpsblr.soft.net"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "hpsblr.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CSS",
+      "emails": [
+        "jobs@csshome.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "csshome.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CBSI",
+      "emails": [
+        "recruiting@cbsinc.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cbsinc.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "NetGalactic",
+      "emails": [
+        "hr@netgalactic.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "netgalactic.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Orbit e",
+      "emails": [
+        "livefree@orbit-e.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "orbit-e.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "is3c",
+      "emails": [
+        "hr@is3c.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "is3c.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Tenet",
+      "emails": [
+        "jobs@tenetindia.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "tenetindia.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "GMR Info",
+      "emails": [
+        "opportunities@gmrinfo.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "gmrinfo.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Intergraph",
+      "emails": [
+        "resume_india@intergraph.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "intergraph.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Net Kraft",
+      "emails": [
+        "be@net-kraft.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "net-kraft.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Honeywell",
+      "emails": [
+        "career@hiso.honeywell.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "hiso.honeywell.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "TEIL",
+      "emails": [
+        "hrssg@teil.soft.net"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "teil.soft.net"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CMG",
+      "emails": [
+        "careers@cmg.nu"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "cmg.nu"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "CMC",
+      "emails": [
+        "hrd@blr.cmc.net.in"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "blr.cmc.net.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "ComInsights",
+      "emails": [
+        "general@cominsights.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "cominsights.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "MultiTech",
+      "emails": [
+        "resume@multitech.co.in"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "multitech.co.in"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Reach Consulting",
+      "emails": [
+        "reach@vsnl.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "vsnl.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "NexAge Consulting",
+      "emails": [
+        "jobs@nexageconsulting.com"
+      ],
+      "email_type": "shared_inbox",
+      "domains": [
+        "nexageconsulting.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "JK Consultants",
+      "emails": [
+        "jkconsultants@vsnl.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "vsnl.com"
+      ],
+      "email_count": 1
+    },
+    {
+      "company": "Consulti",
+      "emails": [
+        "consulti@vsnl.com"
+      ],
+      "email_type": "individual",
+      "domains": [
+        "vsnl.com"
+      ],
+      "email_count": 1
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Job Finder — 1-Click Autofill Bookmarklet</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 40px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    h1 {
+      margin-top: 0;
+      color: #38bdf8;
+      font-size: 24px;
+    }
+    .btn-bookmarklet {
+      display: inline-block;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff;
+      font-weight: bold;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: grab;
+      box-shadow: 0 4px 15px rgba(37,99,235,0.4);
+      margin: 16px 0;
+      border: 1px solid #60a5fa;
+    }
+    .btn-bookmarklet:hover {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    }
+    code {
+      background: #090d16;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #93c5fd;
+      font-size: 13px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    .tag {
+      background: #0284c7;
+      color: white;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="tag">1-Click Automation</span>
+    <h1>🚀 Job Application 1-Click Autofill</h1>
+    <p>Automatically fills your name, email, phone number, location, LinkedIn, GitHub, portfolio, PES University education, and standard authorization answers on:</p>
+    <p><b>Greenhouse</b> • <b>Lever</b> • <b>Ashby</b> • <b>Workday</b> • <b>LinkedIn Easy Apply</b></p>
+
+    <hr style="border: 0; border-top: 1px solid #334155; margin: 20px 0;">
+
+    <h3>How to Install:</h3>
+    <ol>
+      <li>Make sure your browser's <b>Bookmarks bar</b> is visible (<code>Ctrl + Shift + B</code>).</li>
+      <li><b>Drag and drop</b> this blue button directly into your Bookmarks Bar:</li>
+    </ol>
+
+    <div style="text-align: center; margin: 24px 0;">
+      <a class="btn-bookmarklet" href="javascript:(function(){const P={f:'Akash',l:'Jadhav',n:'Akash R Jadhav',e:'akashrj090@gmail.com',p:'+91 7676265783',c:'Bengaluru, Karnataka, India',li:'https://www.linkedin.com/in/akashrjadhav/',gh:'https://github.com/akashrdj/portfolio',u:'PES University',d:'B.Tech in Computer Science and Engineering'};function ev(el){el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));}function s(el,v){if(!el||!v)return;el.focus();el.value=v;ev(el);}let fn=document.querySelector('input[name*=\'first_name\' i], input[name*=\'firstname\' i], input[autocomplete=\'given-name\']');let ln=document.querySelector('input[name*=\'last_name\' i], input[name*=\'lastname\' i], input[autocomplete=\'family-name\']');if(fn)s(fn,P.f);if(ln)s(ln,P.l);if(!fn){let nm=document.querySelector('input[name=\'name\'], input[name*=\'full_name\' i], input[name=\'_systemfield_name\']');if(nm)s(nm,P.n);}s(document.querySelector('input[type=\'email\'], input[name*=\'email\' i], input[name=\'_systemfield_email\']'),P.e);s(document.querySelector('input[type=\'tel\'], input[name*=\'phone\' i], input[name=\'_systemfield_phoneNumber\']'),P.p);s(document.querySelector('input[name*=\'location\' i], input[name*=\'city\' i]'),P.c);s(document.querySelector('input[name*=\'linkedin\' i], input[name*=\'urls[LinkedIn]\']'),P.li);s(document.querySelector('input[name*=\'github\' i], input[name*=\'urls[GitHub]\']'),P.gh);s(document.querySelector('input[name*=\'website\' i], input[name*=\'portfolio\' i], input[name*=\'urls[Portfolio]\']'),P.gh);s(document.querySelector('input[name*=\'school\' i], input[name*=\'university\' i], input[name=\'org\']'),P.u);document.querySelectorAll('select').forEach(sel=>{let txt=(sel.name+' '+sel.id).toLowerCase();if(txt.includes('auth')||txt.includes('visa')){for(let o of sel.options){if(o.text.toLowerCase().includes('yes')){sel.value=o.value;ev(sel);break;}}}if(txt.includes('notice')||txt.includes('join')){for(let o of sel.options){if(o.text.toLowerCase().includes('immediate')||o.value==='0'){sel.value=o.value;ev(sel);break;}}}});let b=document.createElement('div');b.style.cssText='position:fixed;top:16px;right:16px;z-index:999999;background:#0f172a;color:#f8fafc;border:2px solid #3b82f6;border-radius:8px;padding:12px 18px;font-family:sans-serif;font-size:13px;box-shadow:0 10px 25px rgba(0,0,0,0.5);';b.innerHTML='<span style=\'font-size:18px;\'>🚀</span> <b>AI Job Finder:</b> Autofilled fields for Akash R Jadhav!';document.body.appendChild(b);setTimeout(()=>b.remove(),3500);})();">
+        ⚡ Autofill Job Application
+      </a>
+    </div>
+
+    <h3>How to Use:</h3>
+    <ol>
+      <li>Click any job's <b>"Apply on Company Portal"</b> button in your AI Job Finder dashboard.</li>
+      <li>When the application form opens on Greenhouse, Lever, Ashby, or LinkedIn, click <b>⚡ Autofill Job Application</b> in your Bookmarks bar.</li>
+      <li>Watch all inputs populate in under 1 second. Attach your resume PDF and submit!</li>
+    </ol>
+  </div>
+</body>
+</html>

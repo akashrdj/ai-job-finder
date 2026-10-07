@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-09-02T09:58:05.597130",
+  "sources_tested": [
+    "greenhouse",
+    "remoteok",
+    "workday",
+    "lever"
+  ],
+  "results": [
+    {
+      "source": "greenhouse",
+      "boards_tested": 5,
+      "total_raw": 586,
+      "total_filtered": 65,
+      "details": {
+        "github": {
+          "status": "not_found",
+          "raw_jobs": 0,
+          "filtered_jobs": 0
+        },
+        "gitlab": {
+          "status": "ok",
+          "http_status": 200,
+          "raw_jobs": 218,
+          "filtered_jobs": 21,
+          "sample": [
+            "AI Engineer",
+            "Backend Engineer, AI Engineering: Duo Chat",
+            "Backend Engineer, Geo Team"
+          ],
+          "response_time_s": 0.94
+        },
+        "canonical": {
+          "status": "ok",
+          "http_status": 200,
+          "raw_jobs": 302,
+          "filtered_jobs": 41,
+          "sample": [
+            "Alliances Field Engineer",
+            "Associate Linux Support Engineer",
+            "Cloud Field Engineer"
+          ],
+          "response_time_s": 0.94
+        },
+        "razorpay": {
+          "status": "not_found",
+          "raw_jobs": 0,
+          "filtered_jobs": 0
+        },
+        "postman": {
+          "status": "ok",
+          "http_status": 200,
+          "raw_jobs": 66,
+          "filtered_jobs": 3,
+          "sample": [
+            "Corporate Solutions Engineer, Nordics",
+            "Enterprise Solutions Engineer, Italy",
+            "Strategic Solutions Engineering, Netherlands/Sweden/Denmark"
+          ],
+          "response_time_s": 1.18
+        }
+      }
+    },
+    {
+      "source": "remoteok",
+      "status": "ok",
+      "http_status": 200,
+      "raw_jobs": 100,
+      "filtered_jobs": 13,
+      "sample": [
+        {
+          "title": "Plant Fitter",
+          "company": "Linsco Ltd",
+          "salary": "$0\u2013$0",
+          "tags": [
+            "education",
+            "customer support",
+            "marketing",
+            "exec",
+            "finance"
+          ]
+        },
+        {
+          "title": "Fire Officer",
+          "company": "JLL",
+          "salary": "$0\u2013$0",
+          "tags": [
+            "education",
+            "exec",
+            "ops",
+            "engineer"
+          ]
+        },
+        {
+          "title": "Production Lead",
+          "company": "ITC Limited",
+          "salary": "$0\u2013$0",
+          "tags": [
+            "education",
+            "exec",
+            "ops",
+            "engineer",
+            "amazon"
+          ]
+        },
+        {
+          "title": "Employee",
+          "company": "HARTMANN GROUP International",
+          "salary": "$0\u2013$0",
+          "tags": [
+            "education",
+            "exec",
+            "ops",
+            "engineer",
+            "amazon"
+          ]
+        },
+        {
+          "title": "Cloud Computing",
+          "company": "Amazon Web Services (AWS)",
+          "salary": "$0\u2013$0",
+          "tags": [
+            "education",
+            "exec",
+            "ops",
+            "engineer",
+            "amazon"
+          ]
+        }
+      ],
+      "response_time_s": 1.52
+    },
+    {
+      "source": "workday",
+      "targets_tested": 5,
+      "total_raw": 40,
+      "total_filtered": 4,
+      "details": {
+        "Cisco": {
+          "status": "http_422",
+          "raw_jobs": 0
+        },
+        "NVIDIA": {
+          "status": "ok",
+          "http_status": 200,
+          "raw_jobs": 20,
+          "filtered_jobs": 3,
+          "sample": [
+            {
+              "title": "Software Engineer, OpenShell",
+              "location": "US, Remote"
+            },
+            {
+              "title": "Software Engineer,  Routing",
+              "location": "India, Bengaluru"
+            },
+            {
+              "title": "Software Engineer, Production Engineering",
+              "location": "India, Bengaluru"
+            }
+          ],
+          "response_time_s": 2.38
+        },
+        "Wipro": {
+          "status": "http_422",
+          "raw_jobs": 0
+        },
+        "Adobe": {
+          "status": "ok",
+          "http_status": 200,
+          "raw_jobs": 20,
+          "filtered_jobs": 1,
+          "sample": [
+            {
+              "title": "Software Engineer 3",
+              "location": "Bangalore"
+            }
+          ],
+          "response_time_s": 1.74
+        },
+        "Intuit": {
+          "status": "http_401",
+          "raw_jobs": 0
+        }
+      }
+    },
+    {
+      "source": "lever",
+      "companies_tested": 6,
+      "total_raw": 14,
+      "total_filtered": 2,
+      "details": {
+        "razorpay": {
+          "status": "not_found",
+          "raw_jobs": 0
+        },
+        "swiggy": {
+          "status": "not_found",
+          "raw_jobs": 0
+        },
+        "cred": {
+          "status": "ok",
+          "http_status": 200,
+          "raw_jobs": 14,
+          "filtered_jobs": 2,
+          "sample": [
+            {
+              "title": "data scientist",
+              "location": "hyderabad",
+              "url": "https://jobs.lever.co/cred/7301faf3-d7ec-40d4-b49a-07ed20fc9691"
+            },
+            {
+              "title": "machine learning engineer",
+              "location": "hyderabad",
+              "url": "https://jobs.lever.co/cred/7e4d512e-fc89-40fd-9a30-46c5459bbea5"
+            }
+          ],
+          "response_time_s": 1.08
+        },
+        "postman": {
+          "status": "not_found",
+          "raw_jobs": 0
+        },
+        "linear": {
+          "status": "not_found",
+          "raw_jobs": 0
+        },
+        "browserstack": {
+          "status": "not_found",
+          "raw_jobs": 0
+        }
+      }
+    }
+  ]
+}

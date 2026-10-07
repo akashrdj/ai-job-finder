@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ai-job-finder": {
+      "command": "<PATH_TO_PYTHON_ENV>/python.exe",
+      "args": [
+        "<PATH_TO_REPO>/backend/mcp_server/server.py"
+      ],
+      "cwd": "<PATH_TO_REPO>/backend",
+      "env": {
+        "PYTHONPATH": "<PATH_TO_REPO>/backend",
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUTF8": "1"
+      }
+    }
+  }
+}

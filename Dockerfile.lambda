@@ -1,0 +1,14 @@
+# AWS Lambda Container Image
+FROM public.ecr.aws/lambda/python:3.12
+
+# Copy requirements and install dependencies
+COPY backend/requirements.txt ${LAMBDA_TASK_ROOT}/requirements.txt
+RUN pip install --no-cache-dir -r ${LAMBDA_TASK_ROOT}/requirements.txt
+
+# Copy application code, candidate profile, and recruiter database
+COPY backend/app ${LAMBDA_TASK_ROOT}/app
+COPY my_profile.json ${LAMBDA_TASK_ROOT}/my_profile.json
+COPY recruiter_companies.json ${LAMBDA_TASK_ROOT}/recruiter_companies.json
+
+# Lambda entry point
+CMD [ "app.lambda_handler.handler" ]

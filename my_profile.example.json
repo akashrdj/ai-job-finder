@@ -1,0 +1,60 @@
+{
+  "_instructions": "Template profile. Copy to my_profile.json, fill in your details, and run: python inject_profile.py",
+  "full_name": "YOUR FULL NAME",
+  "email": "your.email@gmail.com",
+  "phone": "+91 XXXXXXXXXX",
+  "location": "Bengaluru, India",
+  "github_url": "https://github.com/your-username",
+  "linkedin_url": "https://www.linkedin.com/in/your-profile/",
+  "leetcode_url": "https://leetcode.com/u/your-handle/",
+  "portfolio_url": "https://yourportfolio.dev",
+
+  "skills": [
+    "Python", "C++", "Java", "JavaScript", "TypeScript",
+    "React", "FastAPI", "Node.js", "Express.js",
+    "PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy",
+    "Docker", "Kubernetes", "Git", "GitHub", "AWS Lambda",
+    "PostgreSQL", "MongoDB", "MySQL", "SQLite",
+    "REST APIs", "Data Structures & Algorithms", "System Design"
+  ],
+
+  "work_history": [
+    {
+      "company": "Tech Corp",
+      "title": "Software Engineer Intern",
+      "location": "Bengaluru, India",
+      "start_date": "Jan 2025",
+      "end_date": "Jun 2025",
+      "bullets": [
+        "Architected and deployed microservices in FastAPI reducing latency by 35%.",
+        "Built automated CI/CD deployment pipelines using Docker and GitHub Actions."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "AI Job Matcher & Resume Tailor",
+      "description": "Full-stack intelligent job aggregator and automated tailored application drafter.",
+      "tech_stack": ["Python", "FastAPI", "React", "Gemini API", "SQLite"],
+      "bullets": [
+        "Aggregates job postings across 7 APIs including JSearch, Adzuna, and Greenhouse.",
+        "Engineered anti-hallucination validation layer verifying every generated resume claim."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "University / Institute Name",
+      "degree": "B.E. / B.Tech in Computer Science and Engineering",
+      "start_date": "2021",
+      "end_date": "2025",
+      "gpa_or_percentage": "8.5 CGPA"
+    }
+  ],
+
+  "certifications": [
+    "AWS Certified Cloud Practitioner"
+  ]
+}
