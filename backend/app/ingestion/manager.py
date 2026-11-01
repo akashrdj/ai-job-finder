@@ -1,3 +1,20 @@
+"""
+Ingestion Manager — Three-Tier Architecture
+================================================================================
+TIER 1 — FREE FREQUENT (every 15 min):
+    LinkedIn Guest Scraper, JobSpy, JSearch, Adzuna, ATS adapters
+    Zero cost. Runs on every fast-lane discovery cycle.
+
+TIER 2 — FREE MODERATE (every 2 hours):
+    Company Portal Tracker, Scraper Fallback
+    Zero cost but heavier HTTP. Runs less frequently.
+
+TIER 3 — PAID DAILY (once/day at 6 PM IST):
+    Apify Cloud Scraper ($5/mo budget)
+    Cost-guarded: 512 MB memory, 60s timeout, 15 rows max.
+================================================================================
+"""
+
 import logging
 import asyncio
 from typing import List, Dict, Any, Optional
@@ -16,40 +33,94 @@ from app.ingestion.scraper_fallback import ScraperFallbackAdapter
 from app.ingestion.jsearch import JSearchAdapter
 from app.ingestion.adzuna import AdzunaAdapter
 from app.ingestion.company_portal_tracker import CompanyPortalTrackerAdapter
+from app.ingestion.linkedin_scraper import LinkedInGuestScraperAdapter
+from app.ingestion.apify_scraper import ApifyJobScraperAdapter
+from app.ingestion.jobspy_scraper import JobSpyAdapter
 
 logger = logging.getLogger(__name__)
+
+# ── Adapter tiers for cost-aware scheduling ──────────────────────────────────
+
+# TIER 1: Free, lightweight — run every 15 minutes
+FREE_FREQUENT_ADAPTERS = [
+    "linkedin_scraper",   # $0 — direct LinkedIn guest API
+    "jobspy",             # $0 — scrapes LinkedIn + Indeed + Glassdoor + Google
+    "jsearch",            # $0 — RapidAPI free tier (500 req/mo)
+    "adzuna",             # $0 — Adzuna free tier (250 req/mo)
+    "greenhouse",         # $0 — public ATS API
+    "remoteok",           # $0 — public API
+    "lever",              # $0 — public ATS API
+    "workday",            # $0 — public ATS API
+]
+
+# TIER 2: Free but heavier — run every 2 hours
+FREE_MODERATE_ADAPTERS = [
+    "portal_tracker",     # $0 — custom career page crawling
+    "scraper_fallback",   # $0 — generic schema.org extraction
+]
+
+# TIER 3: Paid — run once/day at 6 PM IST only
+PAID_DAILY_ADAPTERS = [
+    "apify_scraper",      # ~$0.81/mo at 1 run/day (within $5 free)
+]
+
 
 class IngestionManager:
     def __init__(self):
         self.adapters: Dict[str, SourceAdapter] = {
-            # Aggregator APIs — broadest coverage (all companies)
+            # TIER 1 — Free Frequent (every 15 min)
+            "linkedin_scraper": LinkedInGuestScraperAdapter(),
+            "jobspy": JobSpyAdapter(),
             "jsearch": JSearchAdapter(),
             "adzuna": AdzunaAdapter(),
-            # ATS-specific APIs — curated company lists
             "greenhouse": GreenhouseAdapter(),
             "remoteok": RemoteOKAdapter(),
             "lever": LeverAdapter(),
             "workday": WorkdayAdapter(),
+            # TIER 2 — Free Moderate (every 2 hours)
             "portal_tracker": CompanyPortalTrackerAdapter(),
-            "scraper_fallback": ScraperFallbackAdapter()
+            "scraper_fallback": ScraperFallbackAdapter(),
+            # TIER 3 — Paid Daily (6 PM IST only)
+            "apify_scraper": ApifyJobScraperAdapter(),
         }
 
     def register_adapter(self, name: str, adapter: SourceAdapter):
         self.adapters[name] = adapter
 
+    def get_tier_adapters(self, tier: str) -> List[str]:
+        """Get adapter names for a specific tier."""
+        if tier == "free_frequent":
+            return FREE_FREQUENT_ADAPTERS
+        elif tier == "free_moderate":
+            return FREE_MODERATE_ADAPTERS
+        elif tier == "paid_daily":
+            return PAID_DAILY_ADAPTERS
+        elif tier == "all_free":
+            return FREE_FREQUENT_ADAPTERS + FREE_MODERATE_ADAPTERS
+        elif tier == "all":
+            return FREE_FREQUENT_ADAPTERS + FREE_MODERATE_ADAPTERS + PAID_DAILY_ADAPTERS
+        else:
+            return list(self.adapters.keys())
+
     async def run_ingestion(self, db: AsyncSession, source_names: Optional[List[str]] = None) -> List[Job]:
         """
         Run ingestion across specified or all active sources.
         Saves new non-duplicate postings into DB and returns newly inserted Job records.
+
+        Args:
+            db: Database session
+            source_names: List of specific adapter names to run. If None, runs ALL adapters.
+                          Use get_tier_adapters() for cost-aware selection.
         """
         active_adapters = [
             (name, adapter) for name, adapter in self.adapters.items()
             if (not source_names or name in source_names)
         ]
 
-        logger.info(f"Starting ingestion across {len(active_adapters)} adapters...")
+        tier_label = "ALL" if not source_names else f"selected ({len(active_adapters)})"
+        logger.info(f"Starting ingestion across {len(active_adapters)} adapters [{tier_label}]...")
 
-        # Run all adapters concurrently
+        # Run all selected adapters concurrently
         async def fetch_with_adapter(name: str, adapter: SourceAdapter) -> List[JobPosting]:
             try:
                 postings = await adapter.fetch_new_postings()

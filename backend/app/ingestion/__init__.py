@@ -6,11 +6,15 @@ from app.ingestion.workday import WorkdayAdapter
 from app.ingestion.scraper_fallback import ScraperFallbackAdapter
 from app.ingestion.jsearch import JSearchAdapter
 from app.ingestion.adzuna import AdzunaAdapter
+from app.ingestion.linkedin_scraper import LinkedInGuestScraperAdapter
+from app.ingestion.apify_scraper import ApifyJobScraperAdapter
+from app.ingestion.jobspy_scraper import JobSpyAdapter
 from app.ingestion.manager import IngestionManager
 
 __all__ = [
     "SourceAdapter", "JobPosting",
     "GreenhouseAdapter", "LeverAdapter", "RemoteOKAdapter", "WorkdayAdapter", "ScraperFallbackAdapter",
-    "JSearchAdapter", "AdzunaAdapter",
+    "JSearchAdapter", "AdzunaAdapter", "LinkedInGuestScraperAdapter", "ApifyJobScraperAdapter",
+    "JobSpyAdapter",
     "IngestionManager"
 ]

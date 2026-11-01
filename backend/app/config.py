@@ -47,6 +47,10 @@ class Settings(BaseSettings):
     ADZUNA_APP_ID: str = Field(default="")         # Free from https://developer.adzuna.com/
     ADZUNA_APP_KEY: str = Field(default="")
 
+    # Apify Web Scraper & LinkedIn Scraper
+    APIFY_API_TOKEN: str = Field(default="")
+    APIFY_ACTOR_ID: str = Field(default="curious_coder/linkedin-jobs-scraper")
+
     # Optional Lead enrichment
     HUNTER_API_KEY: str = Field(default="")
     SNOV_CLIENT_ID: str = Field(default="")
