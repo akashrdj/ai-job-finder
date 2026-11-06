@@ -30,8 +30,8 @@ DEFAULT_WORKDAY_TARGETS = [
     # ── Cisco: board slug corrected (was missing, caused HTTP 422) ───────────
     {"company": "cisco",        "domain": "cisco.wd5.myworkdayjobs.com",         "board": "Cisco-University-Careers",   "display": "Cisco"},
 
-    # ── Indian MNCs & IT Giants (were entirely absent — root cause for Accenture miss) ──
-    {"company": "accenture",    "domain": "accenture.wd3.myworkdayjobs.com",     "board": "Accenture",                  "display": "Accenture"},
+    # ── Indian MNCs & IT Giants ──
+    {"company": "accenture",    "domain": "accenture.wd103.myworkdayjobs.com",   "board": "AccentureCareers",           "display": "Accenture"},
     {"company": "tcs",          "domain": "tcs.wd5.myworkdayjobs.com",           "board": "TCS",                        "display": "TCS"},
     {"company": "infosys",      "domain": "infosys.wd3.myworkdayjobs.com",       "board": "Infosys",                    "display": "Infosys"},
     {"company": "cognizant",    "domain": "cognizant.wd5.myworkdayjobs.com",     "board": "CognizantCareers",           "display": "Cognizant"},
@@ -129,7 +129,13 @@ class WorkdayAdapter(SourceAdapter):
                 for item in items:
                     external_path = item.get("externalPath", "")
                     title = item.get("title", "")
-                    location = item.get("locationsText", "Not Specified")
+                    raw_loc = item.get("locationsText")
+                    if not raw_loc or raw_loc.strip() == "" or raw_loc == "Not Specified":
+                        # Fallback for Workday boards (e.g. Accenture) that return location in bulletFields or externalPath
+                        bullets = " ".join([str(b) for b in item.get("bulletFields", [])])
+                        location = f"{bullets} {external_path}".strip()
+                    else:
+                        location = raw_loc
                     posted_on = item.get("postedOn", "")
 
                     # ── Dedup within this fetch session ──────────────────────

@@ -72,7 +72,8 @@ class MatchingEngine:
         skill_ratio = min(1.0, skill_ratio)
 
         # 4. Composite Score Synthesis (0 - 100)
-        if rule_score <= 0.0:
+        # Hard zero if disqualified by rules OR if candidate matched 0 skills in JD
+        if rule_score <= 0.0 or not matched_skills:
             final_score = 0.0
         else:
             is_fresher = RuleEvaluator.is_fresher_job(job)

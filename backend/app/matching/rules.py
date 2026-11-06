@@ -1,7 +1,10 @@
+from __future__ import annotations
 import re
-from typing import Dict, Any, List, Tuple
-from app.models.user_profile import UserProfile
-from app.models.job import Job
+from typing import Dict, Any, List, Tuple, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from app.models.user_profile import UserProfile
+    from app.models.job import Job
 
 # ── Seniority Keywords that trigger HARD DISQUALIFICATION ──────────────────────
 # Any role containing these in the title is definitively not for freshers.
@@ -16,6 +19,22 @@ SENIOR_TITLE_KEYWORDS = [
     "swe 2", "swe-2", "swe ii", "swe2",
     "swe 3", "swe-3", "swe iii", "swe3",
 ]
+
+# ── Dealbreaker Tech Ecosystems ───────────────────────────────────────────────
+# If a role explicitly targets one of these ecosystems in the title or primary
+# requirements, and the candidate does not list it in their skills, it should be
+# disqualified immediately so candidate does not waste time applying.
+DEALBREAKER_TECH_ECOSYSTEMS: Dict[str, List[str]] = {
+    "C# / .NET": ["c#", "csharp", ".net", "asp.net", "dotnet", "wpf", "wcf", "blazor"],
+    "Ruby": ["ruby", "rails", "ruby on rails"],
+    "PHP": ["php", "laravel", "symfony", "codeigniter", "wordpress"],
+    "iOS / Swift": ["swift", "swiftui", "objective-c", "ios developer", "ios engineer"],
+    "Rust": ["rust", "rustlang"],
+    "Golang": ["golang", "go developer", "go engineer"],
+    "Salesforce Apex": ["apex", "visualforce", "salesforce developer"],
+    "Blockchain / Web3": ["solidity", "smart contracts", "web3 developer", "ethereum"],
+    "SAP / ABAP": ["abap", "sap consultant", "sap basis", "sap fiori", "sap hana"],
+}
 
 # Regex pattern for level 2+ senior engineering designations (avoids false-matching years like 2026)
 SENIOR_LEVEL_PATTERN = re.compile(
@@ -332,5 +351,34 @@ class RuleEvaluator:
             rule_reasons.append(f"Matched {len(matched_skills)} core skills: {', '.join(matched_skills[:6])}.")
         if missing_requirements:
             rule_reasons.append(f"Potential tech stack gaps: {', '.join(missing_requirements)}.")
+
+        # ── 8. Dealbreaker Tech Gatekeeper (C#, PHP, Ruby, Swift, Rust, etc.) ────
+        for eco_name, eco_kws in DEALBREAKER_TECH_ECOSYSTEMS.items():
+            candidate_knows_eco = any(
+                any(k in s for k in eco_kws) for s in candidate_skills_lower
+            )
+            if not candidate_knows_eco:
+                # Hard disqualification if the job title targets an unpossessed ecosystem
+                if any(k in title_lower for k in eco_kws):
+                    rule_reasons.append(
+                        f"Disqualified: Role title targets '{eco_name}' ecosystem which is not in candidate's verified skill set."
+                    )
+                    return 0.0, matched_skills, missing_requirements, rule_reasons
+
+                # Hard disqualification if JD requires the unpossessed ecosystem AND candidate matched 0 primary languages
+                candidate_primary_languages = {"python", "java", "c++", "cpp", "javascript", "typescript"}
+                candidate_has_primary_match = any(s.lower() in candidate_primary_languages for s in matched_skills)
+                has_eco_in_jd = any(re.search(rf"\b{re.escape(k)}\b", desc_lower) for k in eco_kws)
+                if has_eco_in_jd and not candidate_has_primary_match:
+                    rule_reasons.append(
+                        f"Disqualified: JD requires '{eco_name}' and candidate has no primary language match (Python/Java/C++/JS) for this role."
+                    )
+                    return 0.0, matched_skills, missing_requirements, rule_reasons
+
+        # ── 9. Zero-Skill Overlap Disqualification ────────────────────────────
+        # A candidate should never waste time applying to a role with zero matched skills
+        if not matched_skills:
+            rule_reasons.append("Disqualified: Zero candidate skills matched in job description or title.")
+            return 0.0, [], missing_requirements, rule_reasons
 
         return max(0.0, min(1.5, rule_score)), matched_skills, missing_requirements, rule_reasons
