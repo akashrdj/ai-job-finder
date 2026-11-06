@@ -113,9 +113,25 @@ def is_remote(location: str, title: str = "", description: str = "") -> bool:
 
 
 def is_tech_role(title: str) -> bool:
-    """Check if a job title is a tech/CS role."""
+    """Check if a job title is a tech/CS role.
+
+    Extended to catch AI/ML/consulting-style titles (e.g. 'AI & Analytics Associate',
+    'Analyst - Artificial Intelligence') that MNCs like Accenture use instead of
+    startup-style titles ('ML Engineer').
+    """
     title_lower = title.lower()
-    return any(kw in title_lower for kw in FRESHER_ROLE_KEYWORDS)
+    # Primary check: matches any known tech/fresher keyword
+    if any(kw in title_lower for kw in FRESHER_ROLE_KEYWORDS):
+        return True
+    # Secondary check: AI/ML terms that MNCs use in consulting-flavoured titles
+    _AI_ML_EXTRAS = [
+        "artificial intelligence", "machine learning", "deep learning",
+        "data science", "natural language", "computer vision", "mlops",
+        "generative", "genai", "llm", "analytics", "automation",
+        "robotics", "cloud", "devops", "platform", "infrastructure",
+        "cybersecurity", "security", "blockchain", "iot", "embedded",
+    ]
+    return any(kw in title_lower for kw in _AI_ML_EXTRAS)
 
 
 def is_senior_title(title: str) -> bool:

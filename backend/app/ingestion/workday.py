@@ -27,6 +27,29 @@ DEFAULT_WORKDAY_TARGETS = [
     {"company": "uber",         "domain": "uber.wd5.myworkdayjobs.com",          "board": "uberExternalCareerSite",     "display": "Uber"},
     {"company": "dell",         "domain": "dell.wd1.myworkdayjobs.com",          "board": "External",                   "display": "Dell"},
     {"company": "vmware",       "domain": "vmware.wd1.myworkdayjobs.com",        "board": "VMwareCareers",              "display": "VMware"},
+    # ── Cisco: board slug corrected (was missing, caused HTTP 422) ───────────
+    {"company": "cisco",        "domain": "cisco.wd5.myworkdayjobs.com",         "board": "Cisco-University-Careers",   "display": "Cisco"},
+
+    # ── Indian MNCs & IT Giants (were entirely absent — root cause for Accenture miss) ──
+    {"company": "accenture",    "domain": "accenture.wd3.myworkdayjobs.com",     "board": "Accenture",                  "display": "Accenture"},
+    {"company": "tcs",          "domain": "tcs.wd5.myworkdayjobs.com",           "board": "TCS",                        "display": "TCS"},
+    {"company": "infosys",      "domain": "infosys.wd3.myworkdayjobs.com",       "board": "Infosys",                    "display": "Infosys"},
+    {"company": "cognizant",    "domain": "cognizant.wd5.myworkdayjobs.com",     "board": "CognizantCareers",           "display": "Cognizant"},
+    {"company": "capgemini",    "domain": "capgemini.wd3.myworkdayjobs.com",     "board": "Capgemini",                  "display": "Capgemini"},
+    {"company": "hcl",          "domain": "hcltech.wd3.myworkdayjobs.com",       "board": "HCLTechCareers",             "display": "HCL Technologies"},
+    {"company": "ltimindtree",  "domain": "ltimindtree.wd3.myworkdayjobs.com",   "board": "LTIMindtreeCareers",         "display": "LTIMindtree"},
+    {"company": "mphasis",      "domain": "mphasis.wd3.myworkdayjobs.com",       "board": "MphasisCareers",             "display": "Mphasis"},
+    # NOTE: Wipro does NOT use Workday (uses Taleo/SAP SuccessFactors) — removed from targets.
+    # NOTE: Intuit was returning HTTP 401; board verified as "Intuit-Careers" below.
+    {"company": "intuit",       "domain": "intuit.wd5.myworkdayjobs.com",        "board": "Intuit-Careers",             "display": "Intuit"},
+
+    # ── Global Tech & Product Companies (India offices) ───────────────────────
+    {"company": "samsung",      "domain": "samsung.wd3.myworkdayjobs.com",       "board": "Global",                     "display": "Samsung R&D"},
+    {"company": "qualcomm",     "domain": "qualcomm.wd5.myworkdayjobs.com",      "board": "External",                   "display": "Qualcomm"},
+    {"company": "amdocs",       "domain": "amdocs.wd3.myworkdayjobs.com",        "board": "AmDocsCareers",              "display": "Amdocs"},
+    {"company": "micron",       "domain": "micron.wd1.myworkdayjobs.com",        "board": "External",                   "display": "Micron Technology"},
+    {"company": "sap",          "domain": "sap.wd3.myworkdayjobs.com",           "board": "SAPCareers",                 "display": "SAP"},
+    {"company": "siemens",      "domain": "siemens.wd3.myworkdayjobs.com",       "board": "SiemensCareers",             "display": "Siemens"},
 
     # ── Premier FinTech & Global Investment Banking Tech ──────────────────────
     {"company": "jpmc",         "domain": "jpmc.wd5.myworkdayjobs.com",          "board": "JPMC",                       "display": "JPMorgan Chase"},
@@ -42,10 +65,22 @@ DEFAULT_WORKDAY_TARGETS = [
 ]
 
 # Fresher-specific search terms for Workday CXS API
+# Split into two groups: core SWE terms + AI/ML terms.
+# Kept separate so we can tune / disable AI-only search independently.
 WORKDAY_SEARCH_TERMS = [
+    # ── Core SWE / Fresher terms ─────────────────────────────────────────────
     "software engineer", "developer", "data", "technology", "analyst",
     "intern", "associate", "trainee", "graduate", "junior", "fresher",
     "sde", "get", "entry level", "software engineer program", "new analyst",
+    "systems engineer", "platform engineer", "cloud engineer",
+
+    # ── AI / ML / Data Science terms (were entirely missing — caused Accenture miss) ──
+    "machine learning", "artificial intelligence", "data science",
+    "deep learning", "natural language processing", "nlp",
+    "computer vision", "mlops", "ml engineer", "ai engineer",
+    "generative ai", "genai", "large language model", "llm",
+    "data scientist", "applied scientist", "research engineer",
+    "ai analytics", "analytics engineer",
 ]
 
 
