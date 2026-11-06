@@ -176,6 +176,18 @@ class IngestionManager:
             for j in newly_saved_jobs:
                 await db.refresh(j)
             logger.info(f"Successfully saved {len(newly_saved_jobs)} new jobs to database.")
+
+            # Auto-harvest newly discovered Workday boards from incoming job URLs (Adzuna, JSearch, JobSpy, etc.)
+            workday_urls = [j.url for j in newly_saved_jobs if j.url and "myworkdayjobs.com" in j.url]
+            if workday_urls:
+                try:
+                    from app.ingestion.workday_discovery import WorkdayDiscoveryService
+                    disc = WorkdayDiscoveryService()
+                    new_candidates = disc.register_urls(workday_urls)
+                    if new_candidates:
+                        logger.info(f"Auto-harvested {len(new_candidates)} new Workday target candidate(s) from fresh job URLs.")
+                except Exception as e:
+                    logger.debug(f"Workday auto-harvest note: {e}")
         else:
             logger.info("No new unique jobs to save (all duplicates or up-to-date).")
 

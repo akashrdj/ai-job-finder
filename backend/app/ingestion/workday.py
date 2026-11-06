@@ -1,6 +1,8 @@
 import logging
 from typing import List, Optional, Dict, Any
 from datetime import datetime
+from pathlib import Path
+import json
 import httpx
 from bs4 import BeautifulSoup
 from app.ingestion.base import SourceAdapter, JobPosting
@@ -94,7 +96,27 @@ class WorkdayAdapter(SourceAdapter):
 
     def __init__(self, name: str = "workday", config: Optional[Dict[str, Any]] = None):
         super().__init__(name, config)
-        self.targets = self.config.get("targets", DEFAULT_WORKDAY_TARGETS)
+        # 1. Start with configured targets or defaults
+        target_list: List[Dict[str, Any]] = list(self.config.get("targets", DEFAULT_WORKDAY_TARGETS))
+
+        # 2. Dynamically load auto-discovered & verified targets from disk
+        verified_path = Path(__file__).parent / "workday_verified_targets.json"
+        if verified_path.exists():
+            try:
+                with open(verified_path, "r", encoding="utf-8") as f:
+                    verified_data = json.load(f)
+                    if isinstance(verified_data, list):
+                        # Merge verified targets, prioritizing those with verified India presence
+                        seen = {f"{t['domain']}|{t['board']}".lower() for t in target_list}
+                        for vt in verified_data:
+                            key = f"{vt['domain']}|{vt['board']}".lower()
+                            if key not in seen:
+                                target_list.append(vt)
+                                seen.add(key)
+            except Exception as e:
+                logger.debug(f"Could not load verified Workday targets: {e}")
+
+        self.targets = target_list
         self.client_headers = {
             "Content-Type": "application/json",
             "User-Agent": "AIJobFinder-Client/1.0 (Job Matching Review Bot; contact@aijobfinder.local)"

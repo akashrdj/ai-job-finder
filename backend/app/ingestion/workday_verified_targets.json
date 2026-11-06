@@ -1,0 +1,90 @@
+[
+  {
+    "company": "salesforce",
+    "domain": "salesforce.wd12.myworkdayjobs.com",
+    "board": "External_Career_Site",
+    "display": "Salesforce",
+    "total_jobs": 1552,
+    "india_jobs_sample": 1,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:43.707051"
+  },
+  {
+    "company": "paypal",
+    "domain": "paypal.wd1.myworkdayjobs.com",
+    "board": "jobs",
+    "display": "PayPal",
+    "total_jobs": 314,
+    "india_jobs_sample": 6,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:44.418191"
+  },
+  {
+    "company": "mastercard",
+    "domain": "mastercard.wd1.myworkdayjobs.com",
+    "board": "CorporateCareers",
+    "display": "Mastercard",
+    "total_jobs": 945,
+    "india_jobs_sample": 9,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:44.475814"
+  },
+  {
+    "company": "adobe",
+    "domain": "adobe.wd5.myworkdayjobs.com",
+    "board": "external_experienced",
+    "display": "Adobe",
+    "total_jobs": 281,
+    "india_jobs_sample": 4,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:44.622930"
+  },
+  {
+    "company": "nvidia",
+    "domain": "nvidia.wd5.myworkdayjobs.com",
+    "board": "NVIDIAExternalCareerSite",
+    "display": "NVIDIA",
+    "total_jobs": 2000,
+    "india_jobs_sample": 1,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:45.024196"
+  },
+  {
+    "company": "intel",
+    "domain": "intel.wd1.myworkdayjobs.com",
+    "board": "External",
+    "display": "Intel",
+    "total_jobs": 866,
+    "india_jobs_sample": 10,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:46.663754"
+  },
+  {
+    "company": "micron",
+    "domain": "micron.wd1.myworkdayjobs.com",
+    "board": "External",
+    "display": "Micron Technology",
+    "total_jobs": 2912,
+    "india_jobs_sample": 9,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:49.748145"
+  },
+  {
+    "company": "accenture",
+    "domain": "accenture.wd103.myworkdayjobs.com",
+    "board": "AccentureCareers",
+    "display": "Accenture",
+    "total_jobs": 2000,
+    "india_jobs_sample": 10,
+    "has_india_presence": true,
+    "status": "active",
+    "last_verified": "2026-11-06T06:00:52.406169"
+  }
+]
