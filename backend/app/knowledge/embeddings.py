@@ -29,12 +29,15 @@ def _l2_norm(vec: List[float]) -> List[float]:
 class GeminiEmbeddingClient:
     """Async client for generating text embeddings using Google GenAI SDK."""
 
-    def __init__(self, api_key: Optional[str] = None, model: str = DEFAULT_EMBEDDING_MODEL):
+    def __init__(self, api_key: Optional[str] = None, model: str = DEFAULT_EMBEDDING_MODEL, force_deterministic: bool = False):
         self.api_key = settings.GEMINI_API_KEY if api_key is None else api_key
         self.model = model
+        self.force_deterministic = force_deterministic
         self._genai_client = None
 
     def _get_client(self):
+        if self.force_deterministic:
+            return None
         if self._genai_client is None and self.api_key:
             try:
                 from google import genai
@@ -48,6 +51,9 @@ class GeminiEmbeddingClient:
         """Embed a single text string into a 768-dimensional float vector."""
         if not text or not text.strip():
             return [0.0] * EMBEDDING_DIMENSION
+
+        if self.force_deterministic:
+            return self._deterministic_embedding(text)
 
         client = self._get_client()
         if client:
@@ -73,6 +79,9 @@ class GeminiEmbeddingClient:
         """Embed a batch of text strings into float vectors."""
         if not texts:
             return []
+
+        if self.force_deterministic:
+            return [self._deterministic_embedding(t) for t in texts]
 
         client = self._get_client()
         if client:

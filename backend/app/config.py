@@ -1,6 +1,34 @@
 import os
 from pathlib import Path
-from pydantic_settings import BaseSettings, SettingsConfigDict
+try:
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+except ImportError:
+    from pydantic import BaseModel
+    from dotenv import load_dotenv
+    _ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
+    load_dotenv(str(_ENV_PATH))
+
+    class BaseSettings(BaseModel):  # type: ignore[no-redef]
+        def __init__(self, **data):
+            for field_name, field_info in self.model_fields.items():
+                if field_name not in data and field_name in os.environ:
+                    val = os.environ[field_name]
+                    target_type = field_info.annotation
+                    try:
+                        if target_type is int:
+                            val = int(val)
+                        elif target_type is float:
+                            val = float(val)
+                        elif target_type is bool:
+                            val = val.lower() in ("1", "true", "yes")
+                    except (ValueError, TypeError):
+                        pass
+                    data[field_name] = val
+            super().__init__(**data)
+
+    def SettingsConfigDict(**kw):  # type: ignore[no-redef]
+        return kw
+
 from pydantic import Field
 
 BASE_DIR = Path(__file__).resolve().parent.parent
